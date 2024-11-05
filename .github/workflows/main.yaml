@@ -18,12 +18,12 @@ jobs:
           node-version: 20
 
       - name: Build Angular app to prod
-        working-directory: AngCD
+        working-directory: angtestProjd
         run: npm install && npm run build:prod
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: AngCD/dist/AngCD
-          branch: prod  
+          folder: /dist
+          branch: prod 
           token: ${{ secrets.GH_TOKEN }}
