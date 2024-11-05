@@ -17,13 +17,13 @@ jobs:
         with:
           node-version: 20
 
-      - name: Build Angular app to prod
+      - name: Build Angular app to master
         working-directory: angtestProjd
-        run: npm install && npm run build:prod
+        run: npm install && npm run build:master
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: /dist/angtestProjd
-          branch: prod 
+          branch: master
           token: ${{ secrets.GH_TOKEN }}
