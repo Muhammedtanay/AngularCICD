@@ -1,0 +1,1 @@
+import{Q as t,sa as o,ta as s,wa as a,xa as c}from"./chunk-ASEHH3FX.js";var p=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-second"]],standalone:!0,features:[c],decls:2,vars:0,template:function(e,m){e&1&&(o(0,"p"),a(1,"second works!"),s())}})};export{p as SecondComponent};
