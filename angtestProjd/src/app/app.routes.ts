@@ -1,8 +1,13 @@
 import { Routes } from '@angular/router';
-import { HakkimizdaComponent } from './hakkimizda/hakkimizda.component';
-
-
+import { FirstComponent } from './first/first.component';
 
 export const routes: Routes = [
-  { path: 'hakkimizda', component: HakkimizdaComponent }
+  {
+    path: 'first-component',
+    component: FirstComponent,
+  },
+  {
+    path: 'second-component',
+    loadComponent: () => import('./second/second.component').then(c => c.SecondComponent),
+  },
 ];
