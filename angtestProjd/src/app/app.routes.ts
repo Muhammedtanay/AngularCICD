@@ -4,6 +4,6 @@ import { HakkimizdaComponent } from './hakkimizda/hakkimizda.component';
 
 
 export const routes: Routes = [
-  { path: 'hakkimizda', component: HakkimizdaComponent },
+  { path: 'hakkimizda', component: hakkimizdaComponent },
   { path: '', redirectTo: '/hakkimizda', pathMatch: 'full' }
 ];
