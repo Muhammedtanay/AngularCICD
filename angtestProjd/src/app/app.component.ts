@@ -1,30 +1,13 @@
 import { Component } from '@angular/core';
-import { Model, TodoListItem } from './model';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  user = 'USER';
-  model = new Model;
-  items = this.model.items;
-  isDisplay = false;
-  name!: string;
-
-  getName() {
-    return this.model.user;
-  }
-  getItems() {
-    if (this.isDisplay) {
-      return this.model.items.filter((item: any) => !item.action)
-    }
-    return this.model.items;
-  }
-  addItem(value: string) {
-    if (value) {
-      this.model.items.push(new TodoListItem(value, false));
-    }
-  }
+  title = 'angtestProj';
 }
