@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
-import { HakkimizdaComponent } from './path-to-hakkimizda/hakkimizda.component';
+import { HakkimizdaComponent } from './hakkimizda/hakkimizda.component';
+
 
 
 export const routes: Routes = [
