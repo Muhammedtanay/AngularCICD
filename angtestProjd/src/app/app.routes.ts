@@ -4,5 +4,5 @@ import { HakkimizdaComponent } from './hakkimizda/hakkimizda.component';
 
 
 export const routes: Routes = [
-  { path: 'angtestProjd/hakkimizda', component: HakkimizdaComponent }
+  { path: 'hakkimizda', component: HakkimizdaComponent }
 ];
