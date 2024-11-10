@@ -10,3 +10,7 @@ import { Component } from '@angular/core';
 export class HakkimizdaComponent {
 
 }
+onSubmit() {
+  // Form verilerini işle
+  console.log("Form gönderildi.");
+}
