@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
 import { HakkimizdaComponent } from './hakkimizda/hakkimizda.component';
 @NgModule({
   declarations: [
+AppComponent,
+
     HakkimizdaComponent
   ],
   imports: [
@@ -12,6 +15,6 @@ import { HakkimizdaComponent } from './hakkimizda/hakkimizda.component';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [HakkimizdaComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

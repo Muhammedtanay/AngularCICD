@@ -1,19 +1,48 @@
-<!-- appointment.component.html -->
 <form #appointmentForm="ngForm" (ngSubmit)="onSubmit()">
   <label for="customerId">Customer ID:</label>
-  <input type="number" id="customerId" name="customerId" [(ngModel)]="appointment.customerId" required />
+  <input
+    type="text"
+    id="customerId"
+    name="customerId"
+    [(ngModel)]="appointment.customerId"
+    required
+  />
 
   <label for="appointmentDate">Appointment Date:</label>
-  <input type="date" id="appointmentDate" name="appointmentDate" [(ngModel)]="appointment.appointmentDate" required />
+  <input
+    type="date"
+    id="appointmentDate"
+    name="appointmentDate"
+    [(ngModel)]="appointment.appointmentDate"
+    required
+  />
 
   <label for="appointmentReason">Appointment Reason:</label>
-  <input type="text" id="appointmentReason" name="appointmentReason" [(ngModel)]="appointment.appointmentReason" required />
+  <input
+    type="text"
+    id="appointmentReason"
+    name="appointmentReason"
+    [(ngModel)]="appointment.appointmentReason"
+    required
+  />
 
   <label for="appointmentStatus">Appointment Status:</label>
-  <input type="text" id="appointmentStatus" name="appointmentStatus" [(ngModel)]="appointment.appointmentStatus" required />
+  <input
+    type="text"
+    id="appointmentStatus"
+    name="appointmentStatus"
+    [(ngModel)]="appointment.appointmentStatus"
+    required
+  />
 
   <label for="doctorId">Doctor ID:</label>
-  <input type="number" id="doctorId" name="doctorId" [(ngModel)]="appointment.doctorId" required />
+  <input
+    type="text"
+    id="doctorId"
+    name="doctorId"
+    [(ngModel)]="appointment.doctorId"
+    required
+  />
 
   <button type="submit">Submit</button>
 </form>
