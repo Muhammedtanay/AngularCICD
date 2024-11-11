@@ -9,8 +9,16 @@ import { Component } from '@angular/core';
 })
 export class HakkimizdaComponent {
 
-}
+appointment = {
+    customerId: '',
+    appointmentDate: '',
+    appointmentReason: '',
+    appointmentStatus: '',
+    doctorId: ''
+  };
+
 onSubmit() {
-  // Form verilerini işle
+
   console.log("Form gönderildi.");
+}
 }
